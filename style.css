@@ -449,51 +449,125 @@ header{
 }
 
 .post{
-    display: flex;
-    flex-direction: column;
-    /* padding-bottom: 5%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    z-index: -1;
 }
+
+/* .grid-side{
+    display: grid;
+    grid-template-columns: 1.2fr 1.5fr 1.2fr;
+} */
 
 .grid-side{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: column;
 }
 
-/* .ways{
-
-} */
+.power-of-grid{
+    display: flex;
+    /* z-index: -1; */
+}
 
 .boxs{
     background: #3267FF;
+    padding: 17% 10% 10% 10%;
+}
+
+.sertxt{
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 3%;
+}
+
+.txt1{
+    width: 110%;
+    color: #FFF;
+    text-align: center;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
 }
 
 .big-magi{
     width: 100%;
-    height: 165%;
+    /* height: 68.6%; */
+}
+
+.increase-height{
+    height: 100%;
 }
 
 .flx-up{
-    display: flex;
+    height: 59%;
+    background-color: #000A2D;
+    /* position: relative;
+    top: 30%; */
+}
+
+.elit-cont{
+    position: absolute;
+    top: 530%;
+    left: 28%;
 }
 
 .elit{
-    width: 40%;
+    width: 85%;
     position: relative;
-    right: 30%;
-    top: 20%;
+    /* left: 30%; */
+    /* bottom: 50%; */
     z-index: 1;
 }
 
 .exdoc{
     width: 100%;
     background-color: #000A2D;
-    z-index: -1;
+    /* z-index: -1; */
+    padding: 10%;
+}
+
+.expert-doc{
+    color: #636571;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 3%;
+    padding-right: 35%;
+}
+
+.expert-paragraph-doc{
+    width: 60%;
+    color: #636571;
+    text-align: center;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+
+.expert-span{
+    padding-left: 5%;
+    text-align: center;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
 }
 
 .sec-one{
-    /* width: 100%; */
-    padding: 5%;
-    /* display: flex; */
+    padding: 12% 5% 5% 5%;
     flex-direction: column;
     align-items: center;
 }
@@ -537,31 +611,33 @@ header{
     padding-left: 10%;
 }
 
-.hea-lth{
+.available-dcotor-for-hea-lth{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 3%;
+    padding: 0 5% 0 5%;
     gap: 2%;
 }
 
-/* .kghyi{
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-} */
+.available-dcotor-img{
+    position: relative;
+    top: 10%;
+    width: 90%;
+}
 
 .mixed{
-    width: 70%;
-    height: 33%;
+    width: 68%;
+    /* height: 49%; */
     background-color: #FFF;
     position: relative;
-    bottom: 32.7%; 
+    bottom: 18.5%; 
+    padding-top: 3%;
+    /* left: %; */
     overflow: hidden;
     border-radius: 0 2% 0 0;
 }
 
 .pheam{
-    padding: 10% 10% 5% 10%;
+    /* padding: 10% 10% 5% 10%; */
     display: flex;
     align-items: center;
     gap: 10%;
@@ -570,7 +646,7 @@ header{
     font-size: 20px;
     font-style: normal;
     font-weight: 700;
-    line-height: 20px;
+    /* line-height: 20px; */
 }
 
 .ladys-doc{
@@ -578,7 +654,7 @@ header{
     color: #636571;
     font-family: Archivo;
     font-size: 16px;
-    padding: 0 10% 2% 10%;
+    /* padding: 0 10% 2% 10%; */
     font-style: normal;
     font-weight: 600;
     line-height: 25.6px;
@@ -586,7 +662,7 @@ header{
 
 .arnco{
     display: flex;
-    padding: 3% 0 3%  10%;
+    padding: 3% 0 3% 10%;
     gap: 5%;
 }
 
@@ -601,8 +677,8 @@ header{
     line-height: 24px;
 }
 
-.tetytx{
-    padding: 5%;
+.honest-review-here{
+    padding: 5% 5% 10% 5%;
     display: flex;
 }
 
@@ -612,7 +688,7 @@ header{
     gap: 5%;
 }
 
-.comment{
+.honest-comment-here{
     width: 19%;
     color: #3267FF;
     font-family: Manrope;
@@ -621,7 +697,9 @@ header{
     font-weight: 700;
     line-height: 22.4px;
     border-radius: 4px;
-    border: 1px solid #EEE;
+    padding: 1% 0;
+    background: #FFF;
+    border: 1px solid #EEEEEE;
 }
 
 .be-honest{
@@ -635,7 +713,7 @@ header{
     letter-spacing: -1.5px;
 }
 
-.reading{
+.honest-reading-here{
     width: 60%;
     color: #636571;
     font-family: Archivo;
@@ -645,7 +723,7 @@ header{
     line-height: 25.6px;
 }
 
-.watch{
+.honest-watch-here{
     width: 20%;
     height: 8%;
     color: #FFF;
@@ -724,7 +802,9 @@ gap: 5rem;
     padding: 15% 15% 20% 5%;
 }
 
-.every{
+.doctor-checkup{
+    width: 27%;
+    padding: 1% 0;
     color: #3267FF;
     font-family: Manrope;
     font-size: 14px;
@@ -757,7 +837,7 @@ gap: 5rem;
     line-height: 25.6px;
 }
 
-.act-us{
+.doctor-btn-checkup{
     margin-top: 5%;
     width: 25%;
     padding: 2% 0;
@@ -770,9 +850,10 @@ gap: 5rem;
     line-height: 24px; 
     border-radius: 4px;
     background: #1644EF;
+    border: 2px solid #3267FF;
 }
 
-.redused{
+.doctor-checkup-pixs{
     width: 100%;
     height: 100%;
     z-index: -1;
@@ -789,6 +870,32 @@ gap: 5rem;
     padding: 5% 5% 5% 10%;
 }
 
+.medi-blog{
+    padding-right: 20%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    color: #000A2D;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 57.2px; /* 110% */
+    letter-spacing: -1.5px;
+}
+
+.medi-text-blog{
+    width: 60%;
+    color: #636571;
+    text-align: center;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+    padding-left: 25%;
+}
+
 .adi{
     color: #3267FF;
     font-family: Manrope;
@@ -796,6 +903,10 @@ gap: 5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 22.4px;
+    margin-left: 40%;
+    border: whitesmoke;
+    border-radius: 5px;
+    padding: 5px 12px;
 }
 
 .hold{
@@ -807,4 +918,232 @@ gap: 5rem;
 
 .size{
     width: 100%;
+}
+
+.oral-symp{
+    width: 100%;
+    color: #000A2D;
+    font-family: Manrope;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    padding: 3% 0;
+}
+
+.adivce{
+    color: #636571;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+    padding-bottom: 5%;
+}
+
+.awarnes{
+    width: 45%;
+    padding: 4% 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    border-radius: 4px;
+    border: none;
+    background: #3267FF;
+}
+
+.close-footer{
+    /* margin: 6% 5% 5% 5%; */
+    padding: 10% 5%;
+    display: flex;
+    /* align-items: center; */
+    border-radius: 8px;
+}
+
+.call-on-us{
+    background: url(<path-to-image>), rgba(132, 137, 207, 0.175) 595.2px 120px / 52% 91.555% no-repeat;
+    display: flex;
+    /* align-items: center; */
+}
+
+.doc-with-tooth{
+    width: 100%;
+    /* position: relative;
+    bottom: 20%; */
+}
+
+.btnUs{
+    margin: 5% 5%;
+    padding: 5px 10px;
+    color: #3267FF;
+    font-family: Manrope;
+    background-color: white;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22.4px;
+    border-radius: 4px;
+    border: 1px solid rgba(152, 179, 255, 0.34);
+}
+
+.become-next{
+    width: 79%;
+    color: #000A2D;
+    font-family: Manrope;
+    font-size: 59px;
+    padding-left: 4%;
+    padding-bottom: 5%;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57.2px; 
+    letter-spacing: -1.5px;
+}
+
+.mess-odo{
+    width: 65%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    color: #636571;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+
+.appointment{
+    color: #FFF;
+    text-align: center;
+    font-family: Manrope;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    background-color: #3267FF;
+    margin-left: 5%;
+    padding: 2% 4%;
+    border-radius: 4px;
+}
+
+.footer{
+    background: #000A2D;
+    padding: 3%;
+    color: #FFF;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3%;
+}
+
+.foot-flex{
+    padding-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.help-ooter{
+    color: #FFF;
+    font-family: Manrope;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    padding-top: 5%;
+}
+
+.im-pic-phto{
+    padding-top: 3%;
+    width: 80%;
+}
+
+.flex-pngs{
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    padding-top: 5%;
+}
+
+.link-tag{
+    color: #CCC;
+    text-decoration: none;
+    color: #FFF;
+    flex-direction: column;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+}
+
+.faq-support{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.abj{
+    margin-top: 10%;
+    padding-right: 40%;
+    padding-left: 5%;
+    padding-top: 6%;
+    padding-bottom: 6%;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.I-am-staying-in-abuja{
+    position: relative;
+    left: 60%;
+    bottom: 21%;
+    width: 40%;
+    height: 20%;
+    color: #FFF;
+    text-align: center;
+    font-family: Archivo;
+    font-size: 16px;
+    background: #3267FF;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.gapp{
+    display: flex;
+    gap: 5%;
+    color: #FFF;
+    font-family: Archivo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+    padding: 2% 0;
+}
+
+.straight-line{
+    border-bottom: 2px solid #3267FF;
+    width: 100px;
+}
+
+.straight-line-us{
+    border-bottom: 2px solid #3267FF;
+    width: 100px;
+    padding-top: 7%;
+}
+
+
+@media screen and (max-width: 769px) {
+    
 }
